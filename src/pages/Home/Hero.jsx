@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="container px-8 py-6">
         <div className="flex flex-col items-center justify-center">
           <span className="text-4xl text-gray-600 font-bold text-start w-full">
-            Hi, my name is Dio.
+            Hi, my name is Dio asdadwasdadwa .
           </span>
           <div className="pt-7 text-2xl text-gray-600 text-left w-full">
             Ut laboris consectetur cillum ad ut veniam amet cillum fugiat nulla.
