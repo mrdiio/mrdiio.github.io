@@ -10,8 +10,4 @@
   .heading-sec::after {
     @apply block absolute content-[''] top-[calc(100%+1.2rem)] h-[5px] w-12 bg-yellow-400 rounded-[5px] left-1/2 -translate-x-1/2;
   }
-
-  .active::after {
-    @apply block absolute content-[''] top-0 h-1 bg-yellow-400 rounded-full ;
-  }
 }
