@@ -7,9 +7,11 @@ export default function Hero() {
     <div className="relative flex justify-center items-center h-screen hero">
       <div className="container px-8 py-6">
         <div className="flex flex-col items-center justify-center">
-          <span className="text-4xl text-gray-600 font-bold text-start w-full">
+          <div className="text-4xl text-gray-600 font-bold text-start w-full">
             Hi, my name is Dio.
-          </span>
+            {/* <span className="after:block after:mt-6 after:h-[5px] after:w-40 after:bg-yellow-400 after:rounded-[5px]"></span> */}
+            <hr className="w-40 h-1.5 mt-6 bg-gray-100 border-0 rounded dark:bg-yellow-400"></hr>
+          </div>
           <div className="pt-7 text-2xl text-gray-600 text-left w-full">
             Ut laboris consectetur cillum ad ut veniam amet cillum fugiat nulla.
             Cillum esse incididunt culpa occaecat elit id sint sint. Nulla

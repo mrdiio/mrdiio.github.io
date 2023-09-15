@@ -2,25 +2,26 @@ import { useState } from 'react';
 
 import { Dialog } from '@headlessui/react';
 import { HiBars3, HiFaceSmile, HiXMark } from 'react-icons/hi2';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
-    { name: '// Home', href: '/' },
-    { name: '// About', href: '/#about' },
-    // { name: '// Experience', href: 'experience' },
-    { name: '// Projects', href: 'projects' },
-    { name: '// Contact', href: 'contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/#about' },
+    { name: 'Experience', href: '/#experience' },
+    { name: 'Education', href: '/#education' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   const [navbarColor, setNavbarColor] = useState();
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
-      setNavbarColor('bg-gray-400 shadow-sm transition duration-300');
+      setNavbarColor('bg-white shadow-sm transition duration-300');
     } else {
       setNavbarColor(null);
     }
@@ -63,15 +64,15 @@ export default function Navbar() {
               <HiBars3 className="h-8 w-8" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-10">
             {navigation.map((item) => (
-              <NavLink
+              <Link
                 as="a"
                 key={item.name}
                 to={item.href}
                 className="text-sm font-semibold uppercase hover:text-yellow-400 transition duration-200"
               >
-                {({ isActive }) => (
+                {/* {({ isActive }) => (
                   <span
                     className={
                       isActive ? 'border-b-4 border-yellow-400 py-2' : ''
@@ -79,18 +80,11 @@ export default function Navbar() {
                   >
                     {item.name}
                   </span>
-                )}
-              </NavLink>
+                )} */}
+                <span>{item.name}</span>
+              </Link>
             ))}
           </div>
-          {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div> */}
         </nav>
 
         <Dialog
@@ -123,18 +117,19 @@ export default function Navbar() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <NavLink
+                    <Link
                       key={item.name}
                       to={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {({ isActive }) => (
+                      {/* {({ isActive }) => (
                         <span className={isActive ? 'text-yellow-400' : ''}>
                           {item.name.slice(3)}
                         </span>
-                      )}
-                    </NavLink>
+                      )} */}
+                      <span>{item.name}</span>
+                    </Link>
                   ))}
                 </div>
               </div>

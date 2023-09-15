@@ -4,10 +4,6 @@
 
 @layer components {
   .heading-sec {
-    @apply block relative text-3xl text-gray-600 font-bold uppercase tracking-wider mb-10;
-  }
-
-  .heading-sec::after {
-    @apply block absolute content-[''] top-[calc(100%+1.2rem)] h-[5px] w-12 bg-yellow-400 rounded-[5px] left-1/2 -translate-x-1/2;
+    @apply block relative text-3xl text-gray-600 font-bold uppercase tracking-wider;
   }
 }
