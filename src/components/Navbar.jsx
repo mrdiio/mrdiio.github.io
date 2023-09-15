@@ -10,19 +10,30 @@ export default function Navbar() {
 
   const navigation = [
     { name: '// Home', href: '/' },
-    { name: '// About', href: 'about' },
+    { name: '// About', href: '/#about' },
     // { name: '// Experience', href: 'experience' },
     { name: '// Projects', href: 'projects' },
     { name: '// Contact', href: 'contact' },
   ];
 
+  const [navbarColor, setNavbarColor] = useState();
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setNavbarColor('bg-gray-400 shadow-sm transition duration-300');
+    } else {
+      setNavbarColor(null);
+    }
+  };
+
+  window.addEventListener('scroll', changeNavbarColor);
+
   return (
     <div className="text-gray-600">
       <header
-        className={`inset-x-0 top-0 z-50 
-        ${
-          location.pathname === '/' ? 'absolute' : 'relative bg-white shadow-sm'
-        }
+        className={`inset-x-0 top-0 z-50
+        ${location.pathname === '/' ? 'fixed' : 'relative bg-white shadow-sm'}
+        ${navbarColor}
       `}
       >
         <nav
@@ -35,12 +46,6 @@ export default function Navbar() {
               className="-m-1.5 p-1.5 flex items-center gap-2 hover:text-yellow-400 transition duration-200"
             >
               <span className="sr-only">Your Company</span>
-              {/* <img
-                className="h-8 w-auto"
-                src={logo}
-                // src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              /> */}
 
               <HiFaceSmile className="h-10 w-auto text-yellow-400" />
               <span className="font-semibold tracking-widest uppercase">

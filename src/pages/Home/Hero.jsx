@@ -30,9 +30,12 @@ export default function Hero() {
         </div>
       </div>
       <div className="absolute inset-x-0 bottom-0 pb-5 flex items-center justify-center">
-        <div className="border border-gray-600 p-2 rounded-full shadow">
+        <Link
+          to={'#about'}
+          className="border border-gray-600 p-2 rounded-full shadow cursor-pointer"
+        >
           <HiOutlineArrowDown className="text-2xl text-gray-600" />
-        </div>
+        </Link>
       </div>
     </div>
   );
