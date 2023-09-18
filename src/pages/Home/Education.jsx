@@ -1,7 +1,7 @@
 import HeadingSection from '../../components/HeadingSection';
 
 export default function Education() {
-  const experience = [
+  const education = [
     {
       title: 'Bachelor of Computer Science',
       university: 'Tanjungpura University',
@@ -19,13 +19,19 @@ export default function Education() {
           <HeadingSection title="Education" />
 
           <div className="container flex flex-col items-center gap-5">
-            {experience.map((exp, i) => (
-              <div key={i} className="flex flex-col justify-center">
-                <div className="text-2xl font-semibold text-gray-600 uppercase">
+            {education.map((exp, i) => (
+              <div
+                key={i}
+                className="flex flex-col justify-center items-center text-gray-600 leading-10 border-2 border-gray-200 rounded-md p-5"
+              >
+                <div className="text-2xl font-bold uppercase">
                   {exp.university}
                 </div>
-                <div className="">{exp.title}</div>
-                <div className="">{exp.graduation}</div>
+                <span className="tracking-widest">{exp.title}</span>
+                <div className="text-sm">
+                  <span className="font-medium ">Graduated : </span>
+                  {exp.graduation}
+                </div>
               </div>
             ))}
           </div>

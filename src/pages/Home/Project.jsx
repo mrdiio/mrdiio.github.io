@@ -2,7 +2,7 @@ import HeadingSection from '../../components/HeadingSection';
 
 export default function Project() {
   return (
-    <div id="projects" className="pt-24 py-10 h-screen bg-gray-200/50">
+    <div id="projects" className="pt-24 py-10 min-h-screen bg-gray-200/50">
       <div className="container mx-auto px-8 py-6">
         <div className="flex flex-col items-center justify-center">
           <HeadingSection title="Projects" />
