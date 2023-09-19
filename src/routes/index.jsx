@@ -21,6 +21,5 @@ export const router = createBrowserRouter(
 
       <Route path="*" element={<NotFound />} />
     </>
-  ),
-  { basename: '/about' }
+  )
 );
