@@ -18,7 +18,6 @@ export const router = createBrowserRouter(
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
       </Route>
-
       <Route path="*" element={<NotFound />} />
     </>
   )
