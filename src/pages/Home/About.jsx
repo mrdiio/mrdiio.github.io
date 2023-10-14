@@ -3,8 +3,8 @@ import {
   HiOutlineCog6Tooth,
   HiOutlinePuzzlePiece,
   HiOutlineWrenchScrewdriver,
-} from 'react-icons/hi2';
-import HeadingSection from '../../components/HeadingSection';
+} from 'react-icons/hi2'
+import HeadingSection from '../../components/HeadingSection'
 
 export default function About() {
   const development = [
@@ -16,7 +16,7 @@ export default function About() {
     'HTML5',
     'CSS3',
     'MySQL',
-  ];
+  ]
 
   const tools = [
     'VSCode',
@@ -26,7 +26,7 @@ export default function About() {
     'Composer',
     'Yarn',
     'Docker',
-  ];
+  ]
 
   const frameworks = [
     'Laravel',
@@ -36,7 +36,7 @@ export default function About() {
     'Gin',
     'TailwindCSS',
     'Bootstrap',
-  ];
+  ]
 
   return (
     <div id="about" className="pt-24 py-10">
@@ -46,7 +46,7 @@ export default function About() {
 
           <div className="container flex flex-col gap-10">
             <div className="grid sm:grid-cols-12 gap-10 sm:gap-x-10">
-              <div className="sm:col-span-4 border border-2 rounded-md">
+              <div className="sm:col-span-4 border-2 rounded-md">
                 <div className="flex items-center justify-center h-full">
                   <HiFaceSmile className="h-72 w-auto text-yellow-400" />
                 </div>
@@ -58,20 +58,23 @@ export default function About() {
                     Hi, I&apos;m Dio
                   </span>
                   <span className="">
-                    Velit ad reprehenderit veniam velit ad. Et cillum qui in
-                    aliqua pariatur sunt occaecat velit consectetur
-                    reprehenderit sunt duis amet occaecat. Proident excepteur ex
-                    mollit voluptate excepteur et reprehenderit.
+                    I&apos;m from Pontianak, Indonesia. Now I&apos;m a Fullstack
+                    Developer at Universitas Tanjungpura. I&apos;m a person who
+                    loves to build things. I love to learn new things and
+                    I&apos;m a fast learner. My passion is to build things that
+                    can help people.
                   </span>
 
                   <span className="">
-                    Eu officia nulla aliquip laborum incididunt deserunt. Aliqua
-                    deserunt anim nostrud consectetur proident commodo. Enim
-                    nulla fugiat ullamco Lorem labore consequat ea nostrud
-                    consectetur excepteur ut mollit. Pariatur ullamco aliquip
-                    enim commodo et labore dolore officia adipisicing fugiat.
-                    Reprehenderit mollit aliquip quis duis do dolore fugiat elit
-                    ullamco incididunt ad tempor.
+                    My hobbies are playing games, watching movies, and listening
+                    music. I also love to sport, especially football. I also
+                    love to go to Music Concerts.
+                  </span>
+
+                  <span className="">
+                    I&apos;m currently learning about Javascript, especially in
+                    React.JS and Next.JS. I&apos;m also learning about Flutter
+                    and Dart. I&apos;m also learning about UI/UX Design.
                   </span>
                 </div>
               </div>
@@ -137,5 +140,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  );
+  )
 }

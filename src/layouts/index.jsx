@@ -7,7 +7,7 @@ export default function Layout() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Navbar />
 
-      <div className="relative pb-10">
+      <div className="relative">
         <Outlet />
       </div>
 
