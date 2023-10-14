@@ -9,7 +9,7 @@ export default function Experience() {
       location: 'Pontianak, Indonesia',
       date: '2018 - Present',
       description:
-        'Fugiat ea labore aute elit sint ad adipisicing ut incididunt anim laborum mollit ad nulla. Labore nisi reprehenderit fugiat irure deserunt irure. Sit mollit et incididunt aute dolore enim cupidatat.',
+        'I work at the Information and Communication Technology Unit of Tanjungpura University as a software developer since 2019. I handle databases using MySQL and create applications using various programming languages such as PHP, NodeJS, Flutter, and others. The applications I have developed are both web-based and mobile. I have also created microservices to process data that can integrate with existing systems at Tanjungpura University.',
       tech: [
         'PHP',
         'Javascript',
@@ -41,7 +41,7 @@ export default function Experience() {
     //     'Git',
     //   ],
     // },
-  ];
+  ]
 
   return (
     <div id="experience" className="py-24 bg-gray-200/50">
